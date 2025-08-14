@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "git.confirmSync": false,
+  "css.validate": true,
+  "html.validate.styles": true,
+  "javascript.validate.enable": true,
+  "files.trimTrailingWhitespace": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.cwd": "/home/ron/starsite"
+}

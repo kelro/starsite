@@ -1,0 +1,44 @@
+{
+  // Format on save for consistent code styling
+  "editor.formatOnSave": true,
+
+  // Show whitespace characters (optional but helpful for HTML/CSS)
+  "editor.renderWhitespace": "boundary",
+
+  // Default line ending
+  "files.eol": "\n",
+
+  // Use UTF-8 encoding
+  "files.encoding": "utf8",
+
+  // Enable autosave (optional)
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // Git settings
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "git.confirmSync": false,
+
+  // HTML/CSS/JS Linting (enable if extensions are installed)
+  "css.validate": true,
+  "html.validate.styles": true,
+  "javascript.validate.enable": true,
+
+  // Trim trailing whitespace
+  "files.trimTrailingWhitespace": true,
+
+  // Set the default formatter (example: Prettier)
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Terminal startup directory
+  "terminal.integrated.cwd": "/home/ron/starsite"
+}
