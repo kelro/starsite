@@ -1,0 +1,82 @@
+===============================
+🌟 StarSite Git Workflow Guide
+===============================
+
+This guide walks you through updating your StarSite project and keeping it live on GitHub Pages.
+Great for non-programmers!
+
+======================
+🚀 FIRST-TIME SETUP
+======================
+
+1. Create a GitHub repo:
+   - Name: starsite
+   - Visibility: Public
+   - URL: https://github.com/YOUR_USERNAME/starsite.git
+
+2. Enable GitHub Pages:
+   - Go to your repo → Settings → Pages
+   - Source: main branch / (root)
+   - Save & wait for your live URL:
+     https://YOUR_USERNAME.github.io/starsite/
+
+3. In terminal (on your computer):
+
+   cd ~/starsite
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/starsite.git
+   git push -u origin main
+
+🔐 NOTE: When asked for password, paste your GitHub Personal Access Token.
+
+======================
+🔁 DAILY WORKFLOW
+======================
+
+Every time you edit HTML/CSS/JS files:
+
+   cd ~/starsite
+   git add .
+   git commit -m "Describe what changed"
+   git push
+
+That’s it! Your website will update at:
+   https://YOUR_USERNAME.github.io/starsite/
+
+=============================
+💡 COMMON TROUBLESHOOTING
+=============================
+
+❓ GitHub rejects push:
+   > "non-fast-forward" or "tip is behind"
+
+   ➜ Run:
+   git pull origin main --allow-unrelated-histories
+   git push
+
+❓ Want to check status before pushing?
+
+   ➜ Run:
+   git status
+
+=============================
+🔐 SAVING TOKEN (Optional)
+=============================
+
+Save token temporarily:
+   git config --global credential.helper cache
+
+Or permanently (advanced):
+   git remote set-url origin https://<your_token>@github.com/YOUR_USERNAME/starsite.git
+
+=============================
+✅ All Done!
+=============================
+Whenever you're done editing your site,
+just commit + push and it’s live!
+
+Created with ❤️ by ChatGPT 🔨🤖🔧
+
