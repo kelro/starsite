@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>My Projects</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/darkmode.css" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-
 </head>
 <body>
 
   <nav>
     <h1>⭐️ MyPortfolio</h1>
     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><button id="theme-toggle">🌓</button></li>
     </ul>
   </nav>
 
-  <section class="hero">
-    <h2>Welcome to My Site</h2>
-    <p>I create powerful, responsive websites with modern tech.</p>
-    <a href="projects.html" class="btn">See Projects</a>
+  <section class="section">
+    <h2>My GitHub Projects</h2>
+    <div id="github-projects" class="project-list animated fade-in">
+      <p>Loading projects...</p>
+    </div>
   </section>
 
   <footer>
@@ -33,5 +33,6 @@
 
   <script src="assets/js/script.js"></script>
   <script src="assets/js/darkmode.js"></script>
+  <script src="assets/js/github.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --nav-bg: #1e1e1e;
+  --nav-text: #e0e0e0;
+}

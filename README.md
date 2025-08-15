@@ -1,35 +1,65 @@
-# ⭐ StarSite
+# 🌟 MyPortfolio - Ron Weber
 
-Welcome to **StarSite** — a beautiful, responsive personal website powered by HTML, CSS, JavaScript, and hosted for free using GitHub Pages. 🚀
-
-This project is designed to help you shine online with a modern, mobile-friendly site.  
-All updates go live automatically by pushing changes to this repository.
+A modern multi-page portfolio built with **HTML**, **CSS**, and **JavaScript**.
+This site is hosted via **GitHub Pages** from the [`starsite`](https://github.com/kelro/starsite) repository.
 
 ---
 
-## 🌐 Live Site
+## 🔧 Features
 
-Visit your live website here:  
-**[https://kelro.github.io/starsite/](https://kelro.github.io/starsite/)**
-
----
-
-## 📁 Files in This Project
-
-- `index.html` — Main website layout
-- `style.css` — Visual design and layout styling
-- `script.js` — Interactivity and behavior
-- `README.md` — This file with instructions
-- `workflow.txt` — Step-by-step local Git guide (optional)
+✅ Responsive multi-page layout
+✅ Dark mode toggle (remembers your preference)
+✅ CSS scroll animations
+✅ Dynamic GitHub project feed
+✅ Contact form (non-submitting, with local confirmation)
+✅ Clean and modular file structure for easy updates
 
 ---
 
-## 🛠️ How to Edit and Deploy
+## 🗂 File Structure
+starsite/
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── assets/
+│ ├── css/
+│ │ ├── style.css
+│ │ └── darkmode.css
+│ └── js/
+│ ├── script.js
+│ ├── darkmode.js
+│ └── github.js
+└── images/ (optional)
 
-### 🔁 Daily Workflow (Every time you make changes)
 
-```bash
-cd ~/starsite                 # Go to your project folder
-git add .                     # Stage all changes
-git commit -m "Describe what changed"
-git push                      # Upload and deploy
+---
+
+## 🚀 GitHub API Integration
+
+The **Projects** page pulls live public repositories from your GitHub profile using the GitHub REST API.
+Be sure your username is correct in `assets/js/github.js`.
+
+```javascript
+fetch("https://api.github.com/users/kelro/repos?sort=updated")
+
+🌓 Dark Mode
+
+Dark mode is toggled via the 🌓 button in the nav and remembered using localStorage.
+
+📬 Contact Form
+
+The contact form currently triggers a "Thank you" message locally.
+To enable live form submission, hook it to Formspree or Netlify Forms.
+
+🌐 Live Demo
+
+Your GitHub Pages site will be live at:
+https://your-username.github.io/starsite/
+
+Make sure Pages is enabled in your repo settings and set to deploy from the main or gh-pages branch.
+
+🧠 License
+
+MIT License
+

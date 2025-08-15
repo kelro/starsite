@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/darkmode.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+
+  <nav>
+    <h1>⭐️ MyPortfolio</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><button id="theme-toggle">🌓</button></li>
+    </ul>
+  </nav>
+
+  <section class="section contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" placeholder="Your Name" name="name" required />
+      <input type="email" placeholder="Your Email" name="email" required />
+      <textarea placeholder="Your Message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="contact-message" class="success-msg" style="display: none;">
+      ✅ Thanks for reaching out! I’ll respond shortly.
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyPortfolio</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/darkmode.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contact-message').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
